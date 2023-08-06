@@ -1,0 +1,51 @@
+// Layout settings
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-height: unset;
+  min-width: 100%;
+  overflow: hidden;
+
+  .container {
+    flex-grow: 1;
+    width: 100%;
+  }
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
+}
+
+.container,
+[class*="__container"] {
+  max-width: 1830px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.layout {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.content {
+  flex: 0 0 calc(100% - 427px - 30px);
+  min-width: 0;
+}
+
+.sidebar {
+  flex: 0 0 427px;
+  min-width: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .layout {
+    flex-direction: column;
+  }
+  .content {
+    flex-grow: 1;
+  }
+}

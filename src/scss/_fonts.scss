@@ -1,0 +1,5 @@
+@import '../scss/mixins/_font-face.scss';
+@include font("Philosopher", "Philosopher-Bold", "700", "normal");
+@include font("Roboto", "Roboto-Bold", "700", "normal");
+@include font("Roboto", "Roboto-Medium", "500", "normal");
+@include font("Roboto", "Roboto-Regular", "400", "normal");

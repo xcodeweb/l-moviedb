@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+@@include("html/head.html", {"title": "MovieDB", "style": "main" })
+
+<body class="body">
+  <div class="wrapper">
+    @@include("html/sections/header.html",{})
+
+    <main class="main">
+      <div class="container">
+        <div class="layout">
+          <!-- Content -->
+          <div class="content">
+            @@include("html/sections/hero.html")
+            @@include("html/sections/holder.html", {title: "Лучшие фильмы подборки", class: "bests"})
+            @@include("html/sections/holder.html", {title: "Новые фильмы подборки", class: "new"})
+          </div>
+          <!-- End content -->
+
+          <!-- Sidebar -->
+          <div class="sidebar">
+            @@include("html/sections/same.html")
+            @@include("html/sections/popular.html")
+          </div>
+          <!-- End sidebar -->
+        </div>
+      </div>
+    </main>
+
+    @@include("html/sections/footer.html",{})
+  </div>
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

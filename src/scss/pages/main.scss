@@ -1,0 +1,34 @@
+@import "../fonts";
+@import "../vars";
+@import "../layout";
+@import "../global";
+
+// Page elements
+@import "../components/logo";
+@import "../components/nav";
+@import "../components/search";
+@import "../components/breadcrumbs";
+
+// Page sections
+@import "../sections/header";
+@import "../sections/hero";
+@import "../sections/holder";
+@import "../sections/same";
+@import "../sections/popular";
+@import "../sections/footer";
+
+// Page styles
+
+.body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  background-color: #171717;
+}
+
+@media (max-width: 1400px) {
+  .body {
+    font-size: 16px;
+  }
+}

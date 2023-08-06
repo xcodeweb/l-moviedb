@@ -1,0 +1,21 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 61px;
+  border-radius: 5px 5px 0px 0px;
+  background: rgba(22, 26, 25, 0.35);
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__item:not(:first-child)::before {
+    content: "/";
+    padding: 0 10px;
+  }
+}
